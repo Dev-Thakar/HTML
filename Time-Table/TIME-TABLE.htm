@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Time Table</title>
+
+    <style>
+        #sr-no{
+            width: 100px;
+        }
+        table,td,tr{
+            border: 1px solid black;
+        }
+        .table-primary{
+            border: 1px solid black;
+        }
+        .blank-col{
+            width: 75px;
+        }
+    </style>
+</head>
+<body>
+    <table class="table table-bordered">
+        <thead>
+            <tr align="center">
+                <th id="sr-no" class="table-primary">Sr. no</th>
+                <th class="table-primary">TIME</th>
+                <th class="table-primary" colspan="3">MON</th>
+                <th class="table-primary"colspan="3">TUE</th>
+                <th class="table-primary" colspan="3">WED</th>
+                <th class="table-primary" colspan="3">THU</th>
+                <th class="table-primary" colspan="3">FRI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>10:45 - 11:40</td>
+                <td colspan="3">BWD (AMJ)<br/>MB-601</td>
+                <td colspan="3">MATHS-I (RDD)<br/>MB-601</td>
+                <td class="table-primary" rowspan="2">1DC2-A<br/>
+                    CHS<br/>
+                    (MKJ)<br/>
+                    MB-214
+                </td>
+                <td class="blank-col" rowspan="2"></td>
+                <td class="table-primary" rowspan="2">1DC2-B<br/>
+                    CHS<br/>
+                    (MKJ)<br/>
+                    MB-214
+                </td>
+                <td class="table-primary" rowspan="2">1DC2-A<br/>
+                    CS<br/>
+                    (MDD)<br/>
+                    MA-504
+                </td>
+                <td class="blank-col" rowspan="2"></td>
+                <td class="table-primary" rowspan="2">1DC2-B<br/>
+                    BWD<br/>
+                    (AMJ)<br/>
+                    MB-601
+                </td>
+                <td colspan="3">
+                    BWD (AMJ)<br/>
+                    MB-601
+                </td>
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td>11:40 - 12:35</td>
+                <td colspan="3">CS (MDD)<br/>
+                    MB-601
+                </td>
+                <td colspan="3">
+                    BWD (AMJ)<br/>
+                    MB-601
+                </td>
+                <td colspan="3">ED (VDG)<br/>
+                    MB-601
+
+                </td>
+            </tr>
+            <tr align="center">
+                <td class="table-primary"></td>
+                <th class="table-primary">12:35 - 01:20</th>
+                <th colspan="15" class="table-primary">LUNCH BREAK</th>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td>01:20 - 02:20</td>
+                <td colspan="3">
+                    MATHS-I (RDD)<br/>
+                    MB-601
+                </td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-A<br/>
+                    MATHS-I<br/>
+                    (RDD)<br/>
+                    MA-501
+                </td>
+                <td class="blank-col" rowspan="2"></td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-B<br/>
+                    CS<br/>
+                    (MDD)<br/>
+                    MA-504
+                </td>
+                <td class="table-primary" rowspan="2"> 
+                    1DC2-A<br/>
+                    CFS<br/>
+                    (GAM)<br/>
+                    MB-513
+               </td>
+               <td class="blank-col" rowspan="2"></td>
+               <td class="table-primary" rowspan="2">
+                1DC2-B<br/>
+                CFS<br/>
+                (GAM)<br/>
+                MB-513
+               </td>
+               <td class="table-primary" rowspan="2">
+                1DC2-A<br/>
+                BWD<br/>
+                (AMJ)<br/>
+                 MC-310  </td>
+                <td class="blank-col" rowspan="2"> </td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-B<br/>
+                    MATHS-I<br/>
+                    (RDD)<br/>
+                    MB-606
+                </td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-A<br/>
+                    CHS<br/>
+                    (MKJ)<br>
+                    MB-214
+                </td>
+                <td class="blank-col" rowspan="2"> </td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-B<br/>
+                    CHS<br/>
+                    (MKJ)<br/>
+                    MB-214
+                </td>
+            </tr>
+            <tr align="center">
+                <td>4</td>
+                <td>02:20 : 03:20</td>
+                <td colspan="3">
+                    ED (VDG)<br/>
+                    MB-601
+                </td>
+            </tr>
+            <tr align="center">
+                <td class="table-primary"></td>
+                <th class="table-primary">03:20 - 03:35</th>
+                <th colspan="15" class="table-primary">TEA BREAK</th>
+            </tr>
+            <tr align="center">
+                <td>5</td>
+                <td>03:35 - 04:30</td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-A<br/>
+                    CFS<br/>
+                    (GAM)<br/>
+                    MC-214
+                </td>
+                <td class="blank-col" rowspan="2"></td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-B<br/>
+                    CFS<br/>
+                    (GAM)<br/>
+                    MC-214
+                </td>
+                <td colspan="3">
+                    IC<br/>
+                    MB-601
+                </td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-A<br/>
+                    ED<br/>
+                    (DRD)<br/>
+                    MB-302
+                </td>
+                <td class="blank-col" rowspan="2"></td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-B<br/>
+                    ED<br/>
+                    (SVJ)<br/>
+                    MB-302
+                </td>
+                <td colspan="3">
+                    BWD<br/>
+                    MB-507
+                </td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-A<br/>
+                    ED<br/>
+                    (DRD)<br/>
+                    MB-302
+                </td>
+                <td class="blank-col" rowspan="2"></td>
+                <td class="table-primary" rowspan="2">
+                    1DC2-B<br/>
+                    ED<br/>
+                    (SVJ)<br/>
+                    MB-302
+                </td>
+            </tr>
+            <tr align="center">
+                <td>6</td>
+                <td>04:30 - 05:25</td>
+                <td colspan="3">
+                    CS (MDD)<br/>
+                    MB-601
+                </td>
+                <td colspan="3">
+                    IC<br/>
+                    MB-507
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table style="margin-top: 100px;" class="table table-bordered">
+        <thead>
+            <tr align="center">
+                <th class="table-primary" colspan="3">SUBJECT NAMES AND CODES</th>
+                <th class="table-primary" colspan="2"></th>
+                <th class="table-primary" colspan="4">FACULTY INITIALS AND NAMES</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <th>CFS</th>
+                <th>09CE2101</th>
+                <td>Computer Fundamental Skill</td>
+                <td></td>
+                <td></td>
+                <th>MKJ</th>
+                <td>Prof. Mittal K Joiser</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>BWD</th>
+                <th>09CE2102</th>
+                <td>Basics of Web Designing</td>
+                <td style="width: 100px;"></td>
+                <td style="width: 250px;"></td>
+                <th>RDD</th>
+                <td>Prof. Radhika Dave</td>
+                <td style="width: 100px;"></td>
+                <td style="width: 250px;"></td>
+            </tr>
+
+            <tr>
+                <th>CHS</th>
+                <th>09CE2103</th>
+                <td>Computer Hardware Skill</td>
+                <td></td>
+                <td></td>
+                <th>VDG</th>
+                <td>Prof. Vishal Gajera</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>MATHS-I</th>
+                <th>09MA2101</th>
+                <td>Mathematics - 1</td>
+                <td></td>
+                <td></td>
+                <th>MDD</th>
+                <td>Prof. Mundra Dave</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>ED</th>
+                <th>09ME1101</th>
+                <td>Engineering Drawing</td>
+                <td></td>
+                <td></td>
+                <th>DRD</th>
+                <td>Prof. Dipen Dangi</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>CS</th>
+                <th>09SL0103</th>
+                <td>Communication Skill</td>
+                <td></td>
+                <td></td>
+                <th>SVJ</th>
+                <td>Prof. Samarth JObanputra</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>IC</th>
+                <th></th>
+                <td>Indian Constitution</td>
+                <td></td>
+                <td></td>
+                <th>AMJ</th>
+                <td>Prof. Anjali M Joshi</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>GAM</th>
+                <td>Genetu Asmamaw Minie</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
